@@ -56,9 +56,8 @@ export const fetchAsGuest = async ({ postUrl, timeout }: FetchPostArgs) => {
     return null;
   }
 
-  // const formattedJson = formatGuestJson(json);
-  // return formattedJson;
-  return json;
+  const formattedJson = formatGuestJson(json);
+  return formattedJson;
 };
 
 export const fetchFromAPI = async ({ postUrl, timeout }: FetchPostArgs) => {
